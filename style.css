@@ -1,0 +1,73 @@
+body {
+    color-scheme: dark;
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    background: linear-gradient(to left, rgb(31, 145, 173), rgba(0, 14, 75, 0.685));
+    background-size: 200% 100%;
+    animation: slide 10s ease-in-out infinite alternate;
+    min-height: 100vh;
+    color: rgb(144, 182, 192);
+    margin: 0;
+}
+@keyframes slide {
+    from { background-position: 0% 0; }
+    to   { background-position: 100% 0; }
+}
+@media (prefers-reduced-motion: reduce) { body { animation: none; } }
+ 
+header, section, footer {
+    background: rgba(3, 32, 110, 0.788);
+    color: aliceblue;
+    padding: 20px;
+}
+header.topbar {
+    background: rgba(132, 232, 235, 0.582);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+footer { background: rgba(132, 232, 235, 0.582); padding: 10px 20px; }
+ 
+.avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid aliceblue;
+}
+h1 { margin: 0; }
+ 
+.platform {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+.scores { display: flex; gap: 20px; margin-bottom: 8px; flex-wrap: wrap; }
+canvas {
+    display: block;
+    max-width: 100%;
+    background: white;
+    border-radius: 6px;
+}
+.hint { margin: 8px 0 0; font-size: 0.9rem; }
+ 
+.settings { display: flex; flex-direction: column; gap: 16px; min-width: 220px; }
+.settings h2 { margin: 0; }
+.settings label { display: flex; flex-direction: column; gap: 6px; }
+.settings select { font: inherit; padding: 6px; }
+ 
+.my-button {
+    text-align: center;
+    background-color: rgba(132, 232, 235, 0.582);
+    color: aliceblue;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    font: inherit;
+    cursor: pointer;
+    touch-action: manipulation;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.my-button:hover { background-color: rgba(3, 32, 110, 0.9); transform: translateY(-1px); }
+.my-button:focus-visible { outline: 3px solid #ffb300; outline-offset: 3px; }
+ 

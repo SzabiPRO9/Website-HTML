@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Snake - Bomb Run</title>
+</head>
+<body>
+    <header class="topbar">
+        <img class="avatar" src="Neonfényű kibernetikus kígyó háttérrel_átdolgozott.png" alt="Profile picture">
+        <h1>Snake - Bomb Run</h1>
+    </header>
+ 
+    <section class="info">
+        <h2>Infos</h2>
+        <ul>
+            <li>Catch fruit</li>
+            <li>Avoid bombs</li>
+            <li>Grow as big as you can</li>
+        </ul>
+        <h2>Good luck!</h2>
+    </section>
+ 
+    <section class="platform">
+        <div class="game-box">
+            <div class="scores">
+                <span id="p1score">Player 1: 0</span>
+                <span id="p2score" hidden>Player 2: 0</span>
+                <span id="hiscore">High score: 0</span>
+            </div>
+            <canvas id="game" width="500" height="500"></canvas>
+            <p class="hint" id="hint">Press START, then move with the arrow keys (Player 2: W A S D).</p>
+        </div>
+ 
+        <form class="settings" id="settings" onsubmit="return false">
+            <h2>Game features</h2>
+            <label>Players
+                <select id="players">
+                    <option value="1">1 player</option>
+                    <option value="2">2 players</option>
+                </select>
+            </label>
+            <label>Bombs: <output id="bombsOut">1</output>
+                <input type="range" id="bombs" min="0" max="10" value="1">
+            </label>
+            <label>Apples: <output id="applesOut">1</output>
+                <input type="range" id="apples" min="1" max="10" value="1">
+            </label>
+            <label>Speed: <output id="speedOut">Normal</output>
+                <input type="range" id="speed" min="1" max="3" value="2">
+            </label>
+            <button class="my-button" id="start" type="button">START</button>
+        </form>
+    </section>
+ 
+    <footer>Snake - Bomb Run</footer>
+    <script src="Snake_attempt_2.py"></script>
+</body>
+</html>
+ 
