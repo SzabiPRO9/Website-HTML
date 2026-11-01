@@ -7,3 +7,6 @@ How to use my website?
 Sadly, the python program isn't connected to it, the buttons aren't worked. This is just a view. Next week I'm going to fix it.
 
 In the previous one I created a base version of snake game. Becauce of the people could reach this game I coded a website to it but it doesn't done. According to my ideas the user could set the amount of the apples and bomb in the game and could change into 2 players version (gaming from one screen or maybe from online).
+
+There are some sliders that can be used to adjust the parameters.
+The snake can be controlled with the WASD buttons.
